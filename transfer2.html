@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IN BANK</title>
+        <style>
+            table, tr, th, td {
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+            ul{
+                float: right;
+                list-style-type: none;
+                margin-top: 25px;
+            }
+            ul li{
+                    display: inline-block;
+            }
+            ul li a{
+                    text-decoration: none;
+                    color:brown;
+                    padding: 5px 20px;
+                    border: 1px solid black transparent;
+                    transition: 0.6s ease;
+            }
+            ul li a:hover{
+                          background-color:red;
+                          color: black;
+            }
+            table{ width: 100%;}
+            th{ height: 50px;}
+            td{ height: 40px;}
+            th{
+                background-color:indianred;
+            }
+            label{
+                position: relative;
+                top: 100px;
+            }
+            label1{
+                position: relative;
+                top: 200px;
+                right: 86%;
+            }
+            select{
+                position: relative;
+                top: 130px;
+                width: 80%;
+                right: 6%;
+            }
+            input{
+                position: relative;
+                top: 210px;
+                width: 80%;
+                /*right: 6%;*/
+            }
+            button{
+                position: relative;
+                top: 300px;
+                margin-left:40%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li class="#"><a href="file:///C:/Users/Prinsi/Desktop/New%20folder/index.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+            <div class="main">
+            </div>
+            <div class="title">
+                <h1>Transaction</h1>
+            </div>
+        </header>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Yash</td>
+                <td>yashprajapati@gmail.com</td>
+                <td>1508</td>
+            </tr>
+        </table>
+        <form action="connect.php" method="POST">
+            <label>Transfer To:</label>
+            <select name="To" class="from control" required>
+                <option value disabled selected>Choose</option>
+                <option class="table" value="1">
+                    Mohan Mittal (Balance: 2250)
+                </option>
+                <option class="table" value="2">
+                    Mansi Puri (Balance: 1000)
+                </option>
+                <option class="table" value="4">
+                    Aakash Mittal (Balance: 5000)
+                </option>
+                <option class="table" value="5">
+                    Nithyam Sharma (Balance: 2000)
+                </option>
+                <option class="table" value="6">
+                    Sakshi Jaiswal (Balance: 2611)
+                </option>
+                <option class="table" value="7">
+                    Giriraj Oswal (Balance: 32000)
+                </option>
+                <option class="table" value="8">
+                    Abdul Mateen (Balance: 500)
+                </option>
+                <option class="table" value="9">
+                    Aniket Chate (Balance: 25348)
+                </option>
+                <option class="table" value="10">
+                    Jordan (Balance: 9990)
+                </option>
+            </select>
+            <label1>Amount</label1>
+            <input type="number" class="from control" name="amount" required>
+            <button>Transfer</button>
+        </form>
